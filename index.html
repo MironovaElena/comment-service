@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment-service</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cервис комментариев со спам фильтром</h1>
+            <div class="box__title">
+                <h2>Оставьте ваш комментарий</h2>
+                <h2>Чат</h2>
+            </div>
+            <div class="chat__window">
+                <div class="avatar">
+                    <img class="userphoto" src=""  alt="аватар"> 
+                </div>
+                <div class="nickname">your nickname</div>
+                <div class="message">***</div>
+            </div>
+           
+        <form class="box__comment" onsubmit="return false;" >
+         
+        <div class="label">
+            <label>Введите ваше ФИО:</label>
+            <input id="nametext" type="text" placeholder="ФИО..." class="space">
+        </div>
+        
+        <div class="label">
+            <label>Введите ссылку вашего аватара:</label>
+            <input id="link" type="text"  class="space">
+        </div>    
+
+        <div class="label">
+            <label>Оставьте комментарий:</label>
+            <input  id="commentsdown" type="text"  class="space__tx">
+        </div> 
+        <br>
+        <div class="btn">
+            <button class="submit">Отправить</button> 
+        </div>
+        <br> 
+     
+        </form>
+ 
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+
