@@ -58,3 +58,9 @@ h1{
     color: white;
     font-weight: bold;
 }
+.chat__window{
+    display: flex;
+    flex-direction: column;
+    margin-left: 850px;
+}
+

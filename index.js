@@ -1,7 +1,7 @@
 
     const button = document.querySelector ('.submit');
     button.addEventListener('click', () => {
-        console.log('test');
+       // console.log('test');
         let fullUserName = document.querySelector("#nametext").value; // вызов имени из документа по id
         let arr = fullUserName.split(" ");// split разбивает строку на отдельные элементы - фамилию, имя, отчество
         let lastUserName = arr[0]; // Фамилия
@@ -25,9 +25,9 @@
         divTextOutput[0].textContent = checkSpam(userText); // вывод текста пользователя в чате
     });
 
-    function capitalise (value) {
-        let lower = value.toLowerCase();
-        return lower[0].toUpperCase() + lower.slice(1);
+     function capitalise (value) {
+         let lower = value.toLowerCase();
+         return lower[0].toUpperCase() + lower.slice(1);
     }
     
     function checkSpam(str){
