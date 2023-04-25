@@ -4,50 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/normalize.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
     <title>Comment-service</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Cервис комментариев со спам фильтром</h1>
-            <div class="box__title">
-                <h2>Оставьте ваш комментарий</h2>
-                <h2>Чат</h2>
-            </div>
-            <div class="chat__window">
-                <div class="avatar">
-                    <img class="userphoto" src=""  alt="аватар"> 
-                </div>
-                <div class="nickname">your nickname</div>
-                <div class="message">***</div>
-            </div>
-           
-        <form class="box__comment" onsubmit="return false;" >
-        
-        <div class="label">
-            <label>Введите ваше ФИО:</label>
-            <input id="nametext" type="text" placeholder="ФИО..." class="space">
+    <header></header>
+    <main>
+        <div class="commentservice">
+            <div class="commentsblock">
+                <p class="commentstext">Оставьте Ваш комментарий:</p>
+                
+                <form class="name" id="commentsform" >
+                    <div class="checkbox">
+                        <p class="openusername">Показывать Ваше ФИО?</p>
+                        <label for="click-yes">Yes</label>
+                            <input type="radio"  class="checkbox-yes" id="click-yes" name="anonym" value="yes" onclick="checkboxUsername();" checked>
+                        
+                        <label for="click-no">No </label>
+                            <input type="radio" name="anonym" class="checkbox-no" id="click-no" value="no" onclick="checkboxUsername();">
+                    </div>
+                    <label for="nametext" class="nametext" >Введите Ваши ФИО</label>
+                    <input id="nametext" class="username" type="text">
+                    <label for="link" class="avatartext">Введите ссылку Вашего аватара:</label>
+                    <input id="link" class="avatarlink"  type="text">
+                    <label for="commentsdown" class="commentsdown">Оставьте комментарий:</label>
+                    <textarea id="commentsdown" class="commentsfield" cols="40" rows="3"></textarea>
+                </form>  
+                <button class="submit" type="submit" onclick=submitForm()>Отправить</button> 
+            </div>    
+            <div class="chatblock">
+                <p class="chat-title">ЧАТ</p>
+                <div class="chat-display" id="comment-list"></div>
+            </div>    
         </div>
-        
-        <div class="label">
-            <label>Введите ссылку вашего аватара:</label>
-            <input id="link" type="text"  class="space">
-        </div>    
+    </main>
+    
 
-        <div class="label">
-            <label>Оставьте комментарий:</label>
-            <input  id="commentsdown" type="text"  class="space__tx">
-        </div> 
-        <br>
-        <div class="btn">
-            <button class="submit">Отправить</button> 
-        </div>
-        <br> 
-    
-        </form>
-    </div>
-    
+
+
     <script src="index.js"></script>
 </body>
 </html>
-

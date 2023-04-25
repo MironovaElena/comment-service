@@ -1,0 +1,77 @@
+body {
+    background-color: rgba(53, 71, 4, 0.811);
+}
+.commentservice {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    color: rgba(12, 37, 24, 0.822);
+    text-shadow:  0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #ffff00, 0 0 80px #ffff00, 0 0 90px #ffff00, 0 0 100px #ffff00, 0 0 150px #ffff00;
+}
+.commentsblock, .chatblock {
+    width: 50%;
+    /*display: grid;*/
+    gap: 10%;
+}
+input, textarea {
+    border: 3px solid rgba(7, 40, 10, 0.822);
+    border-style: dashed;
+    width: 70%;
+    min-height: 30px;
+}
+.commentstext, .chat-title {
+    font-size: 20px;
+}
+.name, .avatar, .comment {
+    display: grid;
+    gap: 15px;
+}
+.commentsfield {
+    width: 70%;
+    min-height: 150px;
+    hyphens: auto;
+
+}
+.submit{
+    background-color: rgba(63, 84, 2, 0.811);
+    border: 1px solid rgba(5, 140, 23, 0.822); 
+    min-width: 30%;
+    min-height: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 5%;
+}
+.comment {
+    display: grid;
+    grid-template-columns: minmax(25%, auto) minmax(25%, auto) 1fr;
+    align-items: center;
+    /*display: flex;
+    justify-content: space-around;
+    align-items: baseline;*/
+    gap: 5%;
+}
+.user-text {
+    /*border-bottom: 2px dashed rgba(20, 39, 189, 0.822);*/
+    font-size: 16px;
+    text-shadow: none;
+    min-height: 30px;
+    max-width: 100%;
+    hyphens: auto;
+}
+.userphoto {
+    text-shadow: none;
+    object-fit: contain;
+}
+.checkbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+.checkbox-yes, .checkbox-no {
+    width: 50%;
+}
+
